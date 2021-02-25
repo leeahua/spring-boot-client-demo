@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v1")
-public class HelloController {
+@RequestMapping("/say")
+public class SayController {
 
     @GetMapping("/{name}")
     public String name(@PathVariable("name") String name){
-        return "Hello, " + name;
+        return "say, " + name;
     }
 }
